@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Registration";
+}
+
+<h1>Registration</h1>
+@Html.ValidationSummary()
+
+<form action="../CoffeeShop/Summary" method="post">
+    <input type="text" name="Name" placeholder="Name" value="@Model.Name" /><br /><br />
+    <input type="password" name="Password" placeholder="Password" value="@Model.Password" /><br /><br />
+    <input type="text" name="Email" placeholder="Email" value="@Model.Email" /><br /><br />
+    <input type="checkbox" name="Human" value=True /><br /><br />
+    <input type="date" name="DOB" /><br /><br />
+    <input type="submit" value="Add new user!" />
+</form>
+
